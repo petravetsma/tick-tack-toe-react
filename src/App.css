@@ -11,6 +11,10 @@ h1 {
   text-align: center;
 }
 
+.scores {
+  text-align: center;
+}
+
 .board {
   background-color: #ffffff;
   min-height: 40vh;
@@ -66,4 +70,23 @@ h1 {
 .cell:nth-child(8),
 .cell:nth-child(7) {
   border-bottom: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.github-img {
+  height: 50px;
+}
+
+.rs-img {
+  height: 70px;
 }
