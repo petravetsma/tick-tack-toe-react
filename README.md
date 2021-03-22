@@ -1,4 +1,4 @@
-# react-game
+# Tick-tack-toe react game
 
 My first React stury project
 
