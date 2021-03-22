@@ -29,7 +29,10 @@ export default class App extends React.Component {
       this.setState({
         turn_of_player: (this.state.turn_of_player === 'X') ? 'O' : 'X',
         board: board
-      });
+      }, () => {if (!board.includes('')) {
+        alert('DRAW');
+        this.clearBoard();
+      }});
     }
 
     for (let i = 0; i < win_combos.length; i++) {
@@ -41,11 +44,9 @@ export default class App extends React.Component {
         } else if (this.state.turn_of_player === 'O') {
           this.addScore('O');
         }
-        console.log(this.state)
         this.clearBoard();
       }
     }
-    console.log(this.state)
   }
 
   addScore(player) {
